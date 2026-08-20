@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Discord 2</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Câmeras no fundo */
+        .camera {
+            position: absolute;
+            font-size: 70px;
+            opacity: 0.18;
+            filter: grayscale(100%);
+        }
+
+        .camera1 {
+            top: 8%;
+            left: 8%;
+            transform: rotate(-15deg);
+        }
+
+        .camera2 {
+            top: 15%;
+            right: 10%;
+            transform: rotate(15deg);
+        }
+
+        .camera3 {
+            bottom: 10%;
+            left: 12%;
+            transform: rotate(10deg);
+        }
+
+        .camera4 {
+            bottom: 12%;
+            right: 8%;
+            transform: rotate(-12deg);
+        }
+
+        .camera5 {
+            top: 45%;
+            left: 3%;
+            font-size: 50px;
+        }
+
+        .camera6 {
+            top: 45%;
+            right: 3%;
+            font-size: 50px;
+        }
+
+        main {
+            position: relative;
+            z-index: 10;
+
+            width: 400px;
+            padding: 35px;
+
+            background-color: #2b2d31;
+            border-radius: 8px;
+
+            text-align: center;
+
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            color: #b5bac1;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            text-align: left;
+        }
+
+        label {
+            color: #dbdee1;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+
+            background-color: #1e1f22;
+            border: 1px solid #1e1f22;
+            border-radius: 4px;
+
+            color: white;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #00c6ff;
+        }
+
+        input::placeholder {
+            color: #949ba4;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+
+            background-color: #00a8ff;
+            color: white;
+
+            border: none;
+            border-radius: 4px;
+
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #008cff;
+        }
+
+        a {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p {
+            color: #b5bac1;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Câmeras decorativas -->
+    <div class="camera camera1">📹</div>
+    <div class="camera camera2">📷</div>
+    <div class="camera camera3">📹</div>
+    <div class="camera camera4">📷</div>
+    <div class="camera camera5">📹</div>
+    <div class="camera camera6">📷</div>
+
+    <main>
+
+        <h1>Discord 2</h1>
+        <h2>Bem-vindo de volta!</h2>
+
+        <form action="#" method="post">
+
+            <label for="usuario">USUÁRIO</label>
+
+            <input
+                type="text"
+                id="usuario"
+                name="usuario"
+                placeholder="Digite seu usuário"
+                required
+            >
+
+            <label for="senha">SENHA</label>
+
+            <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Digite sua senha"
+                required
+            >
+
+            <p>
+                <a href="#">Esqueci minha senha</a>
+            </p>
+
+            <button type="submit">Entrar</button>
+
+        </form>
+
+        <p>
+            Ainda não possui uma conta?
+            <a href="#">Cadastre-se</a>
+        </p>
+
+    </main>
+
+</body>
+</html>
